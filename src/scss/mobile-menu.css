@@ -1,0 +1,307 @@
+/*Логотип*/
+.header-left-menu__logo {
+  transform: translateX(5px);
+}
+
+.button-left {
+  background-color: #ffffff;
+}
+
+/*Кнопка поиска*/
+.header-left-menu__search {
+  transform: translateX(-25px);
+}
+
+.menu {
+  list-style: none;
+}
+
+/*Пункты меню*/
+.menu li {
+  padding-left: 0;
+  margin-bottom: 32px;
+  margin-left: -10px;
+}
+
+.menu li:hover {
+  opacity: 0.7;
+  transition: 2s;
+  cursor: pointer;
+  color: #7e7e82;
+}
+
+.menu__active {
+  color: #7e7e82;
+}
+
+.menu__active::before {
+  content: '';
+
+  position: absolute;
+  left: -5px;
+  top: 125px;
+
+  width: 9px;
+  height: 32px;
+
+  background-color: #41f6d7;
+  border-radius: 50px;
+}
+
+/*Кнопки в футере*/
+.image {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-left-menu {
+  margin-left: 24px;
+  margin-bottom: 32px;
+  margin-top: 270px;
+}
+
+/**/
+.footer__email {
+  margin-bottom: 12px;
+}
+
+/*Номер телефона*/
+.footer__phone {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+
+  margin-bottom: 40px;
+}
+
+.email {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.phone {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+/*Языки*/
+.footer__lang {
+  display: flex;
+  gap: 7px;
+}
+
+.footer__lang a {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.footer__lang_active {
+  color: #7e7e82 !important;
+}
+
+.footer__lang a:hover {
+  cursor: pointer;
+  color: #1b1c21 !important;
+  font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .left-menu {
+    display: none;
+  }
+
+  .left-menu-show {
+    width: 130%;
+    height: 1024px;
+    font-family: 'TTLakes';
+    font-size: 16px;
+    overflow: scroll;
+    margin: 0;
+    background-color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  /*Стили для всех кнопок*/
+  .button-left {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .button-left:hover {
+    opacity: 0.7;
+    transition: 2s;
+  }
+
+  .header-left-menu {
+    min-width: 320px;
+    height: 60px;
+
+    margin-left: 24px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-left-menu__close {
+    width: 40px;
+    height: 40px;
+  }
+
+  .close-back {
+    display: none;
+  }
+
+  .active-back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 90;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .left-menu {
+    display: none;
+  }
+
+  .left-menu-show {
+    width: 320px;
+    height: 1024px;
+    font-family: 'TTLakes';
+    font-size: 16px;
+    overflow: scroll;
+    margin: 0;
+    background-color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 16px 0px 52px 0px #0e185033;
+    z-index: 100;
+  }
+
+  /*Стили для всех кнопок*/
+  .button-left {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+
+  .button-left:hover {
+    opacity: 0.7;
+    transition: 2s;
+  }
+
+  .header-left-menu {
+    max-width: 320px;
+    height: 60px;
+
+    margin-left: 24px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-left-menu__close {
+    width: 40px;
+    height: 40px;
+  }
+
+  .close-back {
+    display: none;
+  }
+
+  .active-back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 90;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+@media (min-width: 1120px) {
+  .left-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+  }
+
+  .footer__email {
+    width: 200px;
+  }
+  .left-menu-show {
+    width: 320px;
+    height: 1024px;
+    font-family: 'TTLakes';
+    font-size: 16px;
+    overflow: scroll;
+    margin: 0;
+    background-color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-bottom: 1200px;
+  }
+
+  /*Стили для всех кнопок*/
+  .button-left {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+
+    cursor: pointer;
+  }
+
+  .button-left:hover {
+    opacity: 0.7;
+    transition: 2s;
+  }
+
+  .header-left-menu {
+    max-width: 320px;
+    height: 60px;
+
+    margin-left: 24px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-left-menu__close {
+    display: none;
+  }
+
+  /*Логотип*/
+  .header-left-menu__logo {
+    transform: translateX(5px);
+  }
+}

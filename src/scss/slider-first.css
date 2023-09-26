@@ -1,0 +1,269 @@
+.slides {
+  margin: 0;
+  border-top: 1px solid #d9fff5;
+  font-family: 'TTLakes';
+  background-color: #f8f8f8;
+}
+
+.header {
+  height: 40px;
+  padding: 0;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e7e82;
+  background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%);
+  padding-left: 32px;
+  padding-top: 15px;
+}
+
+.image {
+  align-self: center;
+}
+
+.next {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+
+.lenovo {
+  width: 108px;
+  height: 32px;
+}
+
+.samsung {
+  width: 116px;
+  height: 38.52px;
+}
+
+.apple {
+  width: 44px;
+  height: 44px;
+}
+
+.vs {
+  width: 128px;
+  height: 21px;
+}
+
+.bosch {
+  width: 128px;
+  height: 28.6px;
+}
+
+.hp {
+  width: 52px;
+  height: 52px;
+}
+
+.acer {
+  width: 94px;
+  height: 24px;
+}
+
+.sony {
+  width: 128px;
+  height: 25.6px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    margin-left: 16px;
+  }
+
+  .swiper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .slider-3 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+
+  .slide-3 {
+    width: 240px !important;
+    height: 72px;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: 25px;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    cursor: pointer;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .slides {
+    padding-bottom: 80px;
+  }
+  .header {
+    padding-left: 24px;
+  }
+
+  .slider-3 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 720px;
+    margin-top: 24px;
+    margin-left: 4px;
+    padding-right: auto;
+    height: 200px;
+  }
+
+  .see1 {
+    height: 400px;
+  }
+
+  .slide-3 {
+    width: 25%;
+    height: 52px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 16px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+
+  .btn {
+    border: none;
+    background-color: #f8f8f8;
+    font-family: 'TTLakes';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    position: absolute;
+    left: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  .btn::before {
+    position: relative;
+    top: 9px;
+    left: 1px;
+    display: block;
+    content: '\203a \203a';
+    width: 1px;
+    height: 1px;
+    color: #41f6d7;
+    transform: rotate(90deg);
+  }
+
+  .close::before {
+    position: relative;
+    top: 17px;
+    left: -25px;
+    display: block;
+    content: '\203a \203a';
+    width: 1px;
+    height: 1px;
+    color: #41f6d7;
+    transform: rotate(270deg);
+  }
+}
+
+@media (min-width: 1120px) {
+  .slides {
+    margin-left: 320px;
+    padding-right: 10px;
+  }
+
+  .slider-3 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 960px;
+    margin-top: 24px;
+    margin-left: 10px;
+    height: 200px;
+  }
+
+  .see1 {
+    height: 300px;
+  }
+
+  .slide-3 {
+    width: 20%;
+    height: 52px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .btn {
+    border: none;
+    background-color: #f8f8f8;
+    font-family: 'TTLakes';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  .btn::before {
+    position: relative;
+    top: 9px;
+    left: 1px;
+    display: block;
+    content: '\203a \203a';
+    width: 1px;
+    height: 1px;
+    color: #41f6d7;
+    transform: rotate(90deg);
+  }
+
+  .close::before {
+    position: relative;
+    top: 17px;
+    left: -25px;
+    display: block;
+    content: '\203a \203a';
+    width: 1px;
+    height: 1px;
+    color: #41f6d7;
+    transform: rotate(270deg);
+  }
+}
