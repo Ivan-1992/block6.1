@@ -112,7 +112,8 @@
   }
 
   .left-menu-show {
-    width: 130%;
+    width: 100%;
+    max-width: 440px;
     height: 1024px;
     font-family: 'TTLakes';
     font-size: 16px;
@@ -141,10 +142,11 @@
   }
 
   .header-left-menu {
-    min-width: 320px;
+    width: 320px;
+    max-width: 440px;
     height: 60px;
 
-    margin-left: 24px;
+    margin-left: 12px;
     margin-bottom: 50px;
     padding-top: 20px;
 
@@ -170,6 +172,9 @@
     width: 100%;
     z-index: 90;
     background-color: rgba(255, 255, 255, 0.95);
+  }
+  .footer-left-menu {
+    margin-top: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -243,10 +248,8 @@
 
 @media (min-width: 1120px) {
   .left-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 320px;
+    transform: translateY(-1930px) translateX(-10px);
+    max-width: 320px;
   }
 
   .footer__email {

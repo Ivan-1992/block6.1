@@ -1,9 +1,22 @@
+$background_color: #ffffff;
+$border_color: #eaeaea;
+$background_color2: #41f6d7;
+$text_color: #b5b6bc;
+$red_color: #ff3e79;
+$box-sh-color: #0e185033;
+$width_100: 100%;
+$width_90: 90%;
+$size_1: 1px;
+$size_16: 16px;
+$size_24: 24px;
+$size_40: 40px;
+
 .popup-feedback_close {
   display: none;
 }
 
 .header-popup_feedback {
-  font-size: 24px;
+  font-size: $size_24;
   position: absolute;
   left: 14px;
   top: 84px;
@@ -12,109 +25,106 @@
 .header-popup_feedback::before {
   display: block;
   content: '';
-
   position: absolute;
   left: -15px;
   top: -2px;
-
   width: 3px;
-  height: 40px;
-
-  background-color: #41f6d7;
+  height: $size_40;
+  background-color: $background_color2;
   border-radius: 50px;
 }
 
 .form__phone {
-  width: 90%;
+  width: $width_90;
   height: 48px;
-  border: 1px solid #eaeaea;
+  border: $size_1 solid $border_color;
   border-radius: 5px;
   font-family: 'TTLakes';
-  color: #b5b6bc;
-  font-size: 16px;
-  padding-left: 16px;
+  color: $text_color;
+  font-size: $size_16;
+  padding-left: $size_16;
   position: absolute;
   top: 220px;
-  left: 16px;
+  left: $size_16;
 }
 
 .form__name {
-  width: 90%;
+  width: $width_90;
   height: 48px;
-  border: 1px solid #eaeaea;
+  border: $size_1 solid $border_color;
   border-radius: 5px;
   font-family: 'TTLakes';
-  color: #b5b6bc;
-  font-size: 16px;
-  padding-left: 16px;
+  color: $text_color;
+  font-size: $size_16;
+  padding-left: $size_16;
   position: absolute;
   top: 160px;
-  left: 16px;
+  left: $size_16;
 }
 
 .form__email {
-  width: 90%;
+  width: $width_90;
   height: 48px;
-  border: 1px solid #eaeaea;
+  border: $size_1 solid $border_color;
   border-radius: 5px;
   font-family: 'TTLakes';
-  color: #b5b6bc;
-  font-size: 16px;
-  padding-left: 16px;
+  color: $text_color;
+  font-size: $size_16;
+  padding-left: $size_16;
   position: absolute;
   top: 280px;
-  left: 16px;
+  left: $size_16;
 }
 
 .form__textarea {
-  width: 90%;
+  width: $width_90;
   height: 118px;
-  border: 1px solid #eaeaea;
+  border: $size_1 solid $border_color;
   border-radius: 5px;
   font-family: 'TTLakes';
-  color: #b5b6bc;
-  font-size: 16px;
-  padding-left: 16px;
+  color: $text_color;
+  font-size: $size_16;
+  padding-left: $size_16;
   position: absolute;
   top: 340px;
-  left: 16px;
+  left: $size_16;
 }
 
 .text__popup_feedback {
   position: absolute;
   top: 500px;
-  left: 16px;
+  left: $size_16;
 }
 
 .text_red {
   text-decoration: none;
-  color: #ff3e79;
+  color: $red_color;
 }
 
 .send {
-  background-color: #ff3e79;
+  background-color: $red_color;
   border: none;
   border-radius: 30px;
   width: 136px;
   height: 32px;
   font-family: 'TTLakes';
-  color: #ffffff;
+  color: $background_color;
   position: absolute;
-  right: 16px;
+  right: $size_16;
   top: 600px;
   cursor: pointer;
 }
 
 .close-popup_feed {
-  width: 40px;
-  height: 40px;
+  width: $size_40;
+  height: $size_40;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  background-color: #fff;
-  top: 24px;
-  left: 16px;
+  background-color: $background_color;
+  top: $size_24;
+  left: $size_16;
 }
 
 .send:hover,
@@ -125,13 +135,14 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .popup-feedback {
-    width: 100%;
+    width: $width_100;
+    max-width: 440px;
     height: 940px;
     font-family: 'TTLakes';
-    background-color: #ffffff;
+    background-color: $background_color;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     margin: 0;
     z-index: 110;
   }
@@ -142,10 +153,10 @@
     position: absolute;
     right: -25px;
     top: 0;
-    background-color: #ffffff;
+    background-color: $background_color;
     width: 440px;
     height: 940px;
-    box-shadow: 16px 0px 52px 0px #0e185033;
+    box-shadow: $size_16 0px 52px 0px $box-sh-color;
     z-index: 110;
   }
 
@@ -157,8 +168,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
+    height: $width_100;
+    width: $width_100;
     z-index: 90;
     background-color: rgba(255, 255, 255, 0.95);
   }

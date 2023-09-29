@@ -1,3 +1,8 @@
+// core version + navigation, pagination modules:
+import Swiper from 'swiper'
+import { Navigation, Pagination } from 'swiper/modules'
+
+Swiper.use([Navigation, Pagination])
 //Все слайдеры
 window.addEventListener('DOMContentLoaded', () => {
   const resizableSwiper = (breakpoint, swiperClass, swiperSettings) => {

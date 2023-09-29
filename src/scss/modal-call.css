@@ -40,7 +40,7 @@
 
 .text__popup {
   position: absolute;
-  top: 234px;
+  top: 154px;
   left: 16px;
 }
 
@@ -49,7 +49,7 @@
   color: #ff3e79;
 }
 
-.send {
+.send-call {
   background-color: #ff3e79;
   border: none;
   border-radius: 30px;
@@ -59,7 +59,7 @@
   color: #ffffff;
   position: absolute;
   right: 16px;
-  top: 115px;
+  top: 315px;
   cursor: pointer;
 }
 
@@ -75,7 +75,7 @@
   left: 16px;
 }
 
-.send:hover,
+.send-call:hover,
 .close-popup:hover {
   opacity: 0.6;
   transition: 2s;
@@ -83,16 +83,24 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .popup-call {
     width: 100%;
+    min-width: 320px;
+    max-width: 440px;
     height: 676px;
     font-family: 'TTLakes';
     background-color: #ffffff;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     margin: 0;
     z-index: 120;
   }
+  .text__popup {
+    position: absolute;
+    top: 220px;
+    left: 16px;
+  }
 }
+
 @media (min-width: 768px) {
   .popup-call {
     position: absolute;

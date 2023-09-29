@@ -3,8 +3,13 @@
 @import './main-bottom.css';
 @import './mobile-menu.css';
 @import './modal-call.css';
-@import './modal-feedback.css';
+@import 'modal-feedback';
 @import './slider-first.css';
+/*@import '../../node_modules/swiper/swiper-bundle.css';*/
+// import Swiper and modules styles
+@import '../../node_modules/swiper/swiper.css';
+@import '../../node_modules/swiper/modules/navigation.css';
+@import '../../node_modules/swiper/modules/pagination.css';
 
 $text: black;
 
@@ -34,7 +39,10 @@ $text: black;
 
 body {
   padding: 0;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  max-height: 1950px;
   font-family: 'TTLakes', sans-serif;
   color: $text;
 }

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    />-->
 
     <title>Site block 6.1</title>
   </head>
@@ -377,7 +377,7 @@
 
     <div class="close-back close-back-close"></div>
 
-    <!--МОДАЛЬНОЕ ОКНО ОБРАТНАЯ СВЯЗЬ-->
+    <!--МОДАЛЬНОЕ ОКНО ЗАКАЗАТЬ ЗВОНОК-->
     <div class="popup-call popup-call_close">
       <div class="popup">
         <button class="close-popup">
@@ -385,17 +385,24 @@
         </button>
 
         <h1 class="header-popup">Заказать звонок</h1>
+        <form action="" method="post">
+          <input
+            type="tel"
+            class="popup__phone"
+            placeholder="Телефон"
+            pattern="^\+7[0-9]{10}$"
+            required
+          />
 
-        <input type="tel" class="popup__phone" value="Телефон" />
+          <div class="text__popup"
+            >Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="text_red">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a href="#" class="text_red">политикой конфиденциальности</a></div
+          >
 
-        <div class="text__popup"
-          >Нажимая “отправить”, вы даете согласие на
-          <a href="#" class="text_red">обработку персональных данных</a> и
-          соглашаетесь с нашей
-          <a href="#" class="text_red">политикой конфиденциальности</a></div
-        >
-
-        <button class="send">ОТПРАВИТЬ &gt;</button>
+          <button class="send-call">ОТПРАВИТЬ &gt;</button>
+        </form>
       </div>
     </div>
     <div class="close-back_modal"></div>
@@ -409,26 +416,48 @@
 
         <h1 class="header-popup_feedback">Обратная связь</h1>
 
-        <form action="" method="post" class="form">
-          <input type="text" class="form__name" value="Имя" />
-          <input type="tel" class="form__phone" value="Телефон" />
-          <input type="email" class="form__email" value="Электронная почта" />
-          <textarea cols="40" rows="10" class="form__textarea">
-Сообщение</textarea
+        <form action="" method="" class="form">
+          <input
+            type="text"
+            class="form__name"
+            placeholder="Имя"
+            minlength="2"
+            maxlength="32"
+            required
+          />
+          <input
+            type="tel"
+            class="form__phone"
+            placeholder="Телефон"
+            pattern="^\+7[0-9]{10}$"
+            required
+          />
+          <input
+            type="email"
+            class="form__email"
+            placeholder="Электронная почта"
+            pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+            required
+          />
+          <textarea
+            cols="40"
+            rows="10"
+            class="form__textarea"
+            placeholder="Сообщение"
+            minlength="10"
+            required
+          ></textarea>
+          <div class="text__popup_feedback"
+            >Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="text_red">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a href="#" class="text_red">политикой конфиденциальности</a></div
           >
+          <button class="send">ОТПРАВИТЬ &gt;</button>
         </form>
-
-        <div class="text__popup_feedback"
-          >Нажимая “отправить”, вы даете согласие на
-          <a href="#" class="text_red">обработку персональных данных</a> и
-          соглашаетесь с нашей
-          <a href="#" class="text_red">политикой конфиденциальности</a></div
-        >
-
-        <button class="send">ОТПРАВИТЬ &gt;</button>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>-->
   </body>
 </html>
