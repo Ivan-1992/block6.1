@@ -408,54 +408,54 @@
     <div class="close-back_modal"></div>
 
     <!--МОДАЛЬНОЕ ОКНО FEEDBACK-->
-    <div class="popup-feedback popup-feedback_close">
-      <div class="popup">
-        <button class="close-popup_feed">
-          <img src="img/close.svg" alt="" />
-        </button>
+    <div class="popup-feedback popup-feedback_closing">
+      <button class="popup-feedback__close">
+        <img src="img/close.svg" alt="" />
+      </button>
 
-        <h1 class="header-popup_feedback">Обратная связь</h1>
+      <h1 class="popup-feedback__header">Обратная связь</h1>
 
-        <form action="" method="" class="form">
-          <input
-            type="text"
-            class="form__name"
-            placeholder="Имя"
-            minlength="2"
-            maxlength="32"
-            required
-          />
-          <input
-            type="tel"
-            class="form__phone"
-            placeholder="Телефон"
-            pattern="^\+7[0-9]{10}$"
-            required
-          />
-          <input
-            type="email"
-            class="form__email"
-            placeholder="Электронная почта"
-            pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
-            required
-          />
-          <textarea
-            cols="40"
-            rows="10"
-            class="form__textarea"
-            placeholder="Сообщение"
-            minlength="10"
-            required
-          ></textarea>
-          <div class="text__popup_feedback"
-            >Нажимая “отправить”, вы даете согласие на
-            <a href="#" class="text_red">обработку персональных данных</a> и
-            соглашаетесь с нашей
-            <a href="#" class="text_red">политикой конфиденциальности</a></div
-          >
-          <button class="send">ОТПРАВИТЬ &gt;</button>
-        </form>
-      </div>
+      <form action="" method="" class="form">
+        <input
+          type="text"
+          class="form__name"
+          placeholder="Имя"
+          minlength="2"
+          maxlength="32"
+          required
+        />
+        <input
+          type="tel"
+          class="form__phone"
+          placeholder="Телефон"
+          pattern="^\+7[0-9]{10}$"
+          required
+        />
+        <input
+          type="email"
+          class="form__email"
+          placeholder="Электронная почта"
+          pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+          required
+        />
+        <textarea
+          cols="40"
+          rows="10"
+          class="form__textarea"
+          placeholder="Сообщение"
+          minlength="10"
+          required
+        ></textarea>
+        <div class="form__text"
+          >Нажимая “отправить”, вы даете согласие на
+          <a href="#" class="form__text_red">обработку персональных данных</a> и
+          соглашаетесь с нашей
+          <a href="#" class="form__text_red"
+            >политикой конфиденциальности</a
+          ></div
+        >
+        <button class="form__send">ОТПРАВИТЬ &gt;</button>
+      </form>
     </div>
 
     <!--<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>-->

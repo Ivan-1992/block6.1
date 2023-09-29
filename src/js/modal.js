@@ -50,18 +50,18 @@ popupClose.addEventListener('click', function () {
 //Модальное окно feedback
 const openChat = document.querySelectorAll('.image__chat')
 const openFeed = document.querySelector('.popup-feedback')
-const popupCloseFeed = document.querySelector('.close-popup_feed')
+const popupCloseFeed = document.querySelector('.popup-feedback__close')
 
 for (let i = 0; i < openChat.length; i++) {
   openChat[i].addEventListener('click', function () {
-    openFeed.classList.remove('popup-feedback_close')
+    openFeed.classList.remove('popup-feedback_closing')
     closeBackModal.classList.remove('close-back_modal')
     closeBackModal.classList.add('active-back_modal')
   })
 }
 
 popupCloseFeed.addEventListener('click', function () {
-  openFeed.classList.add('popup-feedback_close')
+  openFeed.classList.add('popup-feedback_closing')
   closeBackModal.classList.add('close-back_modal')
   closeBackModal.classList.remove('active-back_modal')
 })

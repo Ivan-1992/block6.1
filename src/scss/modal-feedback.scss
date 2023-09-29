@@ -11,126 +11,134 @@ $size_16: 16px;
 $size_24: 24px;
 $size_40: 40px;
 
-.popup-feedback_close {
+.popup-feedback_closing {
   display: none;
 }
 
-.header-popup_feedback {
-  font-size: $size_24;
-  position: absolute;
-  left: 14px;
-  top: 84px;
-}
+.popup-feedback {
+  &__close {
+    width: $size_40;
+    height: $size_40;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    background-color: $background_color;
+    top: $size_24;
+    left: $size_16;
 
-.header-popup_feedback::before {
-  display: block;
-  content: '';
-  position: absolute;
-  left: -15px;
-  top: -2px;
-  width: 3px;
-  height: $size_40;
-  background-color: $background_color2;
-  border-radius: 50px;
-}
+    &:hover {
+      opacity: 0.6;
+      transition: 2s;
+    }
+  }
 
-.form__phone {
-  width: $width_90;
-  height: 48px;
-  border: $size_1 solid $border_color;
-  border-radius: 5px;
-  font-family: 'TTLakes';
-  color: $text_color;
-  font-size: $size_16;
-  padding-left: $size_16;
-  position: absolute;
-  top: 220px;
-  left: $size_16;
-}
+  &__header {
+    font-size: $size_24;
+    position: absolute;
+    left: 14px;
+    top: 84px;
 
-.form__name {
-  width: $width_90;
-  height: 48px;
-  border: $size_1 solid $border_color;
-  border-radius: 5px;
-  font-family: 'TTLakes';
-  color: $text_color;
-  font-size: $size_16;
-  padding-left: $size_16;
-  position: absolute;
-  top: 160px;
-  left: $size_16;
-}
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -15px;
+      top: -2px;
+      width: 3px;
+      height: $size_40;
+      background-color: $background_color2;
+      border-radius: 50px;
+    }
+  }
 
-.form__email {
-  width: $width_90;
-  height: 48px;
-  border: $size_1 solid $border_color;
-  border-radius: 5px;
-  font-family: 'TTLakes';
-  color: $text_color;
-  font-size: $size_16;
-  padding-left: $size_16;
-  position: absolute;
-  top: 280px;
-  left: $size_16;
-}
+  .form {
+    &__name {
+      width: $width_90;
+      height: 48px;
+      border: $size_1 solid $border_color;
+      border-radius: 5px;
+      font-family: 'TTLakes';
+      color: $text_color;
+      font-size: $size_16;
+      padding-left: $size_16;
+      position: absolute;
+      top: 160px;
+      left: $size_16;
+    }
 
-.form__textarea {
-  width: $width_90;
-  height: 118px;
-  border: $size_1 solid $border_color;
-  border-radius: 5px;
-  font-family: 'TTLakes';
-  color: $text_color;
-  font-size: $size_16;
-  padding-left: $size_16;
-  position: absolute;
-  top: 340px;
-  left: $size_16;
-}
+    &__phone {
+      width: $width_90;
+      height: 48px;
+      border: $size_1 solid $border_color;
+      border-radius: 5px;
+      font-family: 'TTLakes';
+      color: $text_color;
+      font-size: $size_16;
+      padding-left: $size_16;
+      position: absolute;
+      top: 220px;
+      left: $size_16;
+    }
 
-.text__popup_feedback {
-  position: absolute;
-  top: 500px;
-  left: $size_16;
-}
+    &__email {
+      width: $width_90;
+      height: 48px;
+      border: $size_1 solid $border_color;
+      border-radius: 5px;
+      font-family: 'TTLakes';
+      color: $text_color;
+      font-size: $size_16;
+      padding-left: $size_16;
+      position: absolute;
+      top: 280px;
+      left: $size_16;
+    }
 
-.text_red {
-  text-decoration: none;
-  color: $red_color;
-}
+    &__textarea {
+      width: $width_90;
+      height: 118px;
+      border: $size_1 solid $border_color;
+      border-radius: 5px;
+      font-family: 'TTLakes';
+      color: $text_color;
+      font-size: $size_16;
+      padding-left: $size_16;
+      position: absolute;
+      top: 340px;
+      left: $size_16;
+    }
 
-.send {
-  background-color: $red_color;
-  border: none;
-  border-radius: 30px;
-  width: 136px;
-  height: 32px;
-  font-family: 'TTLakes';
-  color: $background_color;
-  position: absolute;
-  right: $size_16;
-  top: 600px;
-  cursor: pointer;
-}
+    &__text {
+      position: absolute;
+      top: 500px;
+      left: $size_16;
 
-.close-popup_feed {
-  width: $size_40;
-  height: $size_40;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  background-color: $background_color;
-  top: $size_24;
-  left: $size_16;
-}
+      &_red {
+        text-decoration: none;
+        color: $red_color;
+      }
+    }
 
-.send:hover,
-.close-popup_feed:hover {
-  opacity: 0.6;
-  transition: 2s;
+    &__send {
+      background-color: $red_color;
+      border: none;
+      border-radius: 30px;
+      width: 136px;
+      height: 32px;
+      font-family: 'TTLakes';
+      color: $background_color;
+      position: absolute;
+      right: $size_16;
+      top: 600px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+        transition: 2s;
+      }
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -158,34 +166,34 @@ $size_40: 40px;
     height: 940px;
     box-shadow: $size_16 0px 52px 0px $box-sh-color;
     z-index: 110;
-  }
 
-  .close-back_modal {
-    display: none;
-  }
+    &__close {
+      position: relative;
+      left: -80px;
+    }
 
-  .active-back_modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: $width_100;
-    width: $width_100;
-    z-index: 90;
-    background-color: rgba(255, 255, 255, 0.95);
-  }
+    &__header {
+      position: relative;
+      top: -34px;
+    }
 
-  .close-popup_feed {
-    position: relative;
-    left: -80px;
-  }
+    .form {
+      position: relative;
+      top: -180px;
+    }
 
-  .header-popup_feedback {
-    position: relative;
-    top: -34px;
-  }
+    .close-back_modal {
+      display: none;
+    }
 
-  .form {
-    position: relative;
-    top: -180px;
+    .active-back_modal {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: $width_100;
+      width: $width_100;
+      z-index: 90;
+      background-color: rgba(255, 255, 255, 0.95);
+    }
   }
 }
